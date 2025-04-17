@@ -46,6 +46,9 @@ dependencies {
     implementation(libs.compose.graphics)
     implementation(libs.compose.preview)
     implementation(libs.compose.material3)
+
+    // gravity core
+    implementation(libs.gravity.core)
 }
 
 afterEvaluate {
@@ -56,7 +59,7 @@ afterEvaluate {
 
                 groupId = "com.github.raheemadamboev"
                 artifactId = "core-sdk-compose"
-                version = "1.0.1"
+                version = "1.0.2"
             }
         }
     }
