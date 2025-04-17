@@ -20,5 +20,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "CoreSDKCompose"
-include(":app")
 include(":CoreSDKCompose")
