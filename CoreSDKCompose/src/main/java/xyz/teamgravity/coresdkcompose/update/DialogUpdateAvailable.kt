@@ -17,13 +17,12 @@ import xyz.teamgravity.coresdkcompose.R
 
 @Composable
 fun DialogUpdateAvailable(
-    visible: Boolean,
-    type: UpdateManager.Type,
+    config: DialogUpdateAvailableConfig,
     onDismiss: () -> Unit,
     onConfirm: () -> Unit
 ) {
-    if (visible && type != UpdateManager.Type.None) {
-        val forced by remember { derivedStateOf { type == UpdateManager.Type.Forced } }
+    if (config.visible && config.type != UpdateManager.Type.None) {
+        val forced by remember { derivedStateOf { config.type == UpdateManager.Type.Forced } }
         AlertDialog(
             onDismissRequest = onDismiss,
             icon = {
@@ -69,3 +68,8 @@ fun DialogUpdateAvailable(
         )
     }
 }
+
+data class DialogUpdateAvailableConfig(
+    val visible: Boolean,
+    val type: UpdateManager.Type
+)
