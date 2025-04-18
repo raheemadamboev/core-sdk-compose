@@ -54,7 +54,12 @@ fun DialogUpdateAvailable(
             },
             confirmButton = {
                 TextButton(
-                    onClick = onConfirm
+                    onClick = {
+                        if (type == UpdateManager.Type.Optional) {
+                            onDismiss()
+                        }
+                        onConfirm()
+                    }
                 ) {
                     Text(
                         text = stringResource(R.string.update_available_confirm_button)
