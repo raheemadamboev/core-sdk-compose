@@ -13,7 +13,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import xyz.teamgravity.coresdkcompose.update.DialogUpdateDownloaded
+import xyz.teamgravity.coresdkandroid.update.UpdateManager
+import xyz.teamgravity.coresdkcompose.update.DialogUpdateAvailable
 import xyz.teamgravity.coresdkdemoapp.ui.theme.CoreSDKComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,14 +30,13 @@ class MainActivity : ComponentActivity() {
                     Box(
                         modifier = Modifier.padding(padding)
                     ) {
-                        var visible by remember { mutableStateOf(true) }
-                        DialogUpdateDownloaded(
-                            visible = visible,
+                        var type by remember { mutableStateOf(UpdateManager.Type.Optional) }
+                        DialogUpdateAvailable(
+                            type = type,
                             onDismiss = {
-                                visible = false
+                                type = UpdateManager.Type.None
                             },
                             onConfirm = {
-
                             }
                         )
                     }
