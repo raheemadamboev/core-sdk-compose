@@ -12,4 +12,11 @@
     <string name="update_downloaded_text">The latest version has been successfully downloaded and is ready to install.\nInstall now to enjoy the newest features, performance improvements, and important fixes — or finish it later when it\'s more convenient.</string>
     <string name="update_downloaded_dismiss_button">Later</string>
     <string name="update_downloaded_confirm_button">Install Now</string>
+
+    <!-- Review -->
+    <string name="review_title">Enjoying the app?</string>
+    <string name="review_text">If you find this app helpful, please take a moment to rate us. It only takes a few seconds and really helps us out. Thank you for your support!</string>
+    <string name="review_dismiss_button">No, thanks</string>
+    <string name="review_neutral_button">Maybe later</string>
+    <string name="review_confirm_button">Rate now</string>
 </resources>

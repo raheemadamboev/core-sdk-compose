@@ -1,17 +1,18 @@
 [versions]
 
-compose = "2025.04.00"
+compose = "2025.04.01"
 compose-activity = "1.10.1"
 compose-lifecycle = "2.8.7"
 core = "1.16.0"
-gravity-core = "1.0.6"
+timber = "5.0.1"
+gravity-core = "1.0.11"
 
-android = "8.9.1"
+android = "8.9.2"
 kotlin = "2.1.20"
 
 sdk-min = "26"
-sdk-compile = "35"
-sdk-target = "35"
+sdk-compile = "36"
+sdk-target = "36"
 jvm-target = "17"
 
 [libraries]
@@ -25,6 +26,7 @@ compose-icons = { group = "androidx.compose.material", name = "material-icons-ex
 compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity" }
 compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "compose-lifecycle" }
 core = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
 gravity-core = { group = "com.github.raheemadamboev", name = "core-sdk-android", version.ref = "gravity-core" }
 
 [plugins]
