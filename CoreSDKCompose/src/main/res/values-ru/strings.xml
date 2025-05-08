@@ -12,4 +12,11 @@
     <string name="update_downloaded_text">Последняя версия успешно загружена и готова к установке.\nУстановите сейчас, чтобы насладиться новейшими функциями, улучшениями производительности и важными исправлениями, или завершите установку позже, когда это будет удобнее.</string>
     <string name="update_downloaded_dismiss_button">Позже</string>
     <string name="update_downloaded_confirm_button">Установить Сейчас</string>
+
+    <!-- Review -->
+    <string name="review_title">Нравится приложение?</string>
+    <string name="review_text">Если приложение оказалось полезным, пожалуйста, уделите пару секунд, чтобы оценить нас. Ваша поддержка очень важна для нас!</string>
+    <string name="review_dismiss_button">Нет, спасибо</string>
+    <string name="review_neutral_button">Позже</string>
+    <string name="review_confirm_button">Оценить</string>
 </resources>

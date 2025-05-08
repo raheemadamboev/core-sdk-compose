@@ -12,4 +12,11 @@
     <string name="update_downloaded_text">Eng so\'nggi versiya yuklab olindi va o\'rnatishga tayyor.\nEng yangi funksiyalar va muhim tuzatishlardan bahramand bo\'lish uchun hoziroq o\'rnating yoki qulayroq bo\'lganda uni keyinroq tugating.</string>
     <string name="update_downloaded_dismiss_button">Keyinroq</string>
     <string name="update_downloaded_confirm_button">O\'rnatish</string>
+
+    <!-- Review -->
+    <string name="review_title">Dasturimiz yoqayaptimi?</string>
+    <string name="review_text">Agar dasturimiz sizga foydali bo‘lgan bo\'lsa, iltimos, bizni baholash uchun bir necha soniyangizni ajrating. Sizning qo\'llab-quvvatlashingiz biz uchun juda muhim!</string>
+    <string name="review_dismiss_button">Yo\'q, rahmat</string>
+    <string name="review_neutral_button">Keyinroq</string>
+    <string name="review_confirm_button">Baholash</string>
 </resources>
