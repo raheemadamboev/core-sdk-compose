@@ -59,7 +59,7 @@ afterEvaluate {
 
                 groupId = "com.github.raheemadamboev"
                 artifactId = "core-sdk-compose"
-                version = "1.0.8"
+                version = "1.0.9"
             }
         }
     }
