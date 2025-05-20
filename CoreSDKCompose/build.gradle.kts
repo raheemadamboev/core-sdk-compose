@@ -47,19 +47,22 @@ dependencies {
     implementation(libs.compose.preview)
     implementation(libs.compose.material3)
 
+    // compose paging
+    implementation(libs.compose.paging)
+
     // gravity core
     implementation(libs.gravity.core)
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            register<MavenPublication>("release") {
-                from(components["release"])
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.raheemadamboev"
+            artifactId = "core-sdk-compose"
+            version = "1.0.16"
 
-                groupId = "com.github.raheemadamboev"
-                artifactId = "core-sdk-compose"
-                version = "1.0.15"
+            afterEvaluate {
+                from(components["release"])
             }
         }
     }
