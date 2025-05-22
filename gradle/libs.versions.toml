@@ -1,15 +1,15 @@
 [versions]
 
-compose = "2025.05.00"
+compose = "2025.05.01"
 compose-activity = "1.10.1"
 compose-lifecycle = "2.9.0"
 compose-paging = "3.3.6"
 core = "1.16.0"
 timber = "5.0.1"
-gravity-core = "1.0.18"
+gravity-core = "1.0.19"
 
-android = "8.9.2"
-kotlin = "2.1.20"
+android = "8.9.3"
+kotlin = "2.1.21"
 
 sdk-min = "26"
 sdk-compile = "36"
