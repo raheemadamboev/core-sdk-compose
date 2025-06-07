@@ -3,13 +3,13 @@
 
     <!-- Update -->
     <string name="update_available_title_optional">Update Available</string>
-    <string name="update_available_text_optional">We\'ve made some improvements just for you!\nEnjoy better performance, bug fixes, and new features that make your experience smoother and faster.\nUpdate now to get the best version — or tap Later if you\'re not ready yet.</string>
+    <string name="update_available_text_optional">Improved performance, bug fixes, and new features await!\nUpdate now for the best experience — or tap Later to skip for now.</string>
     <string name="update_available_title_forced">Update Required</string>
-    <string name="update_available_text_forced">A new version of the app is now available.\nTo continue using the app, please update to the latest version. It includes important improvements, new features, and critical fixes to ensure the best experience.\nWe appreciate your understanding and support!</string>
+    <string name="update_available_text_forced">A new version is available.\nPlease update to continue using the app.\nIt includes important improvements, new features, and critical fixes.\nThanks for your support!</string>
     <string name="update_available_dismiss_button">Later</string>
     <string name="update_available_confirm_button">Update Now</string>
     <string name="update_downloaded_title">Download Complete</string>
-    <string name="update_downloaded_text">The latest version has been successfully downloaded and is ready to install.\nInstall now to enjoy the newest features, performance improvements, and important fixes — or finish it later when it\'s more convenient.</string>
+    <string name="update_downloaded_text">The latest version has been successfully downloaded and is ready to install.\nInstall now or finish it later when it\'s more convenient.</string>
     <string name="update_downloaded_dismiss_button">Later</string>
     <string name="update_downloaded_confirm_button">Install Now</string>
 
