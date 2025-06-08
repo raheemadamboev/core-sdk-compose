@@ -3,9 +3,9 @@
 
     <!-- Update -->
     <string name="update_available_title_optional">Yangilanish Mavjud</string>
-    <string name="update_available_text_optional">Dastur ishlashi yaxshilandi, xatoliklar tuzatildi va yangi funksiyalar qo\'shildi!\Bu imkoniyatlar uchun hoziroq yangilang — yoki Keyinroq yangilang.</string>
+    <string name="update_available_text_optional">Dastur ishlashi yaxshilandi, xatoliklar tuzatildi va yangi funksiyalar qo\'shildi!\nBu imkoniyatlar uchun hoziroq yangilang — yoki Keyinroq.</string>
     <string name="update_available_title_forced">Yangilash Zarur</string>
-    <string name="update_available_text_forced">Yangi versiya mavjud.\nIlovani foydalanishda davom etish uchun yangilang.\nU muhim yangilanishlar, yangi funksiyalar va muhim tuzatishlarni o\'z ichiga oladi.\nQo\'llab-quvvatlaganingiz uchun rahmat!</string>
+    <string name="update_available_text_forced">Yangi versiya mavjud.\nIlovadan foydalanishda davom etish uchun uni yangilang.\nU yangi funksiyalar va muhim tuzatishlarni o\'z ichiga oladi.</string>
     <string name="update_available_dismiss_button">Keyinroq</string>
     <string name="update_available_confirm_button">Yangilash</string>
     <string name="update_downloaded_title">Yuklab Olindi</string>
