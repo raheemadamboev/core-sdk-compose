@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- Update -->
     <string name="update_available_title_optional">Yangilanish Mavjud</string>
     <string name="update_available_text_optional">Dastur ishlashi yaxshilandi, xatoliklar tuzatildi va yangi funksiyalar qo\'shildi!\nBu imkoniyatlar uchun hoziroq yangilang — yoki Keyinroq.</string>
@@ -14,7 +13,7 @@
     <string name="update_downloaded_confirm_button">O\'rnatish</string>
 
     <!-- Review -->
-    <string name="review_title">Dasturimiz yoqayaptimi?</string>
+    <string name="review_title">Dasturimiz yoqdimi?</string>
     <string name="review_text">Agar dasturimiz sizga foydali bo‘lgan bo\'lsa, iltimos, bizni baholash uchun bir necha soniyangizni ajrating. Sizning qo\'llab-quvvatlashingiz biz uchun juda muhim!</string>
     <string name="review_dismiss_button">Yo\'q, rahmat</string>
     <string name="review_neutral_button">Keyinroq</string>
