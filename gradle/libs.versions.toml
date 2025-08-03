@@ -1,20 +1,19 @@
 [versions]
 
-compose = "2025.06.01"
+compose = "2025.07.00"
 compose-activity = "1.10.1"
-compose-lifecycle = "2.9.1"
+compose-lifecycle = "2.9.2"
 compose-paging = "3.3.6"
 core = "1.16.0"
 timber = "5.0.1"
-gravity-core = "1.0.25"
+gravity-core = "1.0.31"
 
-android = "8.10.1"
-kotlin = "2.1.21"
+android = "8.12.0"
+kotlin = "2.2.0"
 
 sdk-min = "26"
 sdk-compile = "36"
 sdk-target = "36"
-jvm-target = "17"
 
 [libraries]
 

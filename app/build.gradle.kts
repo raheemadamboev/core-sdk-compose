@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.android)
     alias(libs.plugins.kotlin)
@@ -21,8 +23,12 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = libs.versions.jvm.target.get()
+    kotlin {
+        target {
+            compilerOptions {
+                jvmTarget = JvmTarget.JVM_17
+            }
+        }
     }
 
     buildFeatures {
@@ -35,6 +41,7 @@ dependencies {
     // gravity core
     implementation(libs.gravity.core)
     implementation(projects.coreSDKCompose)
+//    implementation("com.github.raheemadamboev:core-sdk-compose:1.0.27")
 
     // compose
     implementation(platform(libs.compose))
