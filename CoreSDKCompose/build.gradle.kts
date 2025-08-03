@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.library)
     alias(libs.plugins.kotlin)
@@ -15,6 +17,11 @@ android {
 
     lint {
         targetSdk = libs.versions.sdk.target.get().toInt()
+        disable.addAll(
+            listOf(
+                "NotificationPermission"
+            )
+        )
     }
 
     buildFeatures {
@@ -22,13 +29,17 @@ android {
         compose = true
     }
 
-    kotlinOptions {
-        jvmTarget = libs.versions.jvm.target.get()
-    }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlin {
+        target {
+            compilerOptions {
+                jvmTarget = JvmTarget.JVM_17
+            }
+        }
     }
 
     publishing {
@@ -59,7 +70,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.raheemadamboev"
             artifactId = "core-sdk-compose"
-            version = "1.0.26"
+            version = "1.0.27"
 
             afterEvaluate {
                 from(components["release"])
