@@ -26,10 +26,10 @@ fun GDropdownMenuItem(
             onDismiss()
             onClick()
         },
-        leadingIcon = {
-            if (icon != null) {
+        leadingIcon = icon?.let {
+            {
                 IconPlain(
-                    icon = icon,
+                    icon = it,
                     contentDescription = label
                 )
             }
