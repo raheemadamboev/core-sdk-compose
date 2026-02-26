@@ -1,15 +1,17 @@
 [versions]
 
-compose = "2025.07.00"
-compose-activity = "1.10.1"
-compose-lifecycle = "2.9.2"
-compose-paging = "3.3.6"
-core = "1.16.0"
+compose = "2026.02.00"
+compose-icons = "1.7.8"
+compose-adaptive = "1.2.0"
+compose-activity = "1.12.4"
+compose-lifecycle = "2.10.0"
+compose-paging = "3.4.1"
+core = "1.17.0"
 timber = "5.0.1"
-gravity-core = "1.0.33"
+gravity-core = "1.0.41"
 
-android = "8.12.0"
-kotlin = "2.2.0"
+android = "9.0.1"
+kotlin = "2.2.10"
 
 sdk-min = "26"
 sdk-compile = "36"
@@ -22,7 +24,8 @@ compose-ui = { group = "androidx.compose.ui", name = "ui" }
 compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 compose-material3 = { group = "androidx.compose.material3", name = "material3" }
-compose-icons = { group = "androidx.compose.material", name = "material-icons-extended" }
+compose-icons = { group = "androidx.compose.material", name = "material-icons-extended-android", version.ref = "compose-icons" }
+compose-adaptive = { group = "androidx.compose.material3.adaptive", name = "adaptive-android", version.ref = "compose-adaptive" }
 compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity" }
 compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "compose-lifecycle" }
 compose-paging = { group = "androidx.paging", name = "paging-compose", version.ref = "compose-paging" }
@@ -34,5 +37,4 @@ gravity-core = { group = "com.github.raheemadamboev", name = "core-sdk-android",
 
 android = { id = "com.android.application", version.ref = "android" }
 library = { id = "com.android.library", version.ref = "android" }
-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

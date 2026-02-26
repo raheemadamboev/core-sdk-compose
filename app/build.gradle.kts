@@ -1,14 +1,16 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
     alias(libs.plugins.android)
-    alias(libs.plugins.kotlin)
     alias(libs.plugins.compose)
 }
 
 android {
     namespace = "xyz.teamgravity.coresdkdemoapp"
-    compileSdk = libs.versions.sdk.compile.get().toInt()
+
+    compileSdk {
+        version = release(libs.versions.sdk.compile.get().toInt()) {
+            minorApiLevel = 1
+        }
+    }
 
     defaultConfig {
         applicationId = "xyz.teamgravity.coresdkdemoapp"
@@ -31,14 +33,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlin {
-        target {
-            compilerOptions {
-                jvmTarget = JvmTarget.JVM_17
-            }
-        }
-    }
-
     buildFeatures {
         compose = true
     }
@@ -57,6 +51,8 @@ dependencies {
     implementation(libs.compose.graphics)
     implementation(libs.compose.preview)
     implementation(libs.compose.material3)
+
+    // compose icons
     implementation(libs.compose.icons)
 
     // compose activity
