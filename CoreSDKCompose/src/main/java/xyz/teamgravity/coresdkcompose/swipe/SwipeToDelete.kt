@@ -74,16 +74,20 @@ fun <T> SwipeToDelete(
 ) {
     var deleted by rememberSaveable { mutableStateOf(false) }
     val state = rememberSwipeToDismissBoxState(
-        confirmValueChange = { value ->
-            if ((enableDeleteFromStartToEnd && value == SwipeToDismissBoxValue.StartToEnd) || (enableDeleteFromEndToStart && value == SwipeToDismissBoxValue.EndToStart)) {
-                deleted = true
-                return@rememberSwipeToDismissBoxState true
-            } else {
-                return@rememberSwipeToDismissBoxState false
-            }
-        },
         positionalThreshold = { distance ->
             distance * positionalThreshold
+        }
+    )
+
+    LaunchedEffect(
+        key1 = state.currentValue,
+        block = {
+            if (
+                (enableDeleteFromStartToEnd && state.currentValue == SwipeToDismissBoxValue.StartToEnd) ||
+                (enableDeleteFromEndToStart && state.currentValue == SwipeToDismissBoxValue.EndToStart)
+            ) {
+                deleted = true
+            }
         }
     )
 
