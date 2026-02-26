@@ -2,6 +2,7 @@
 
 compose = "2026.02.00"
 compose-icons = "1.7.8"
+compose-adaptive = "1.2.0"
 compose-activity = "1.12.4"
 compose-lifecycle = "2.10.0"
 compose-paging = "3.4.1"
@@ -24,6 +25,7 @@ compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 compose-icons = { group = "androidx.compose.material", name = "material-icons-extended-android", version.ref = "compose-icons" }
+compose-adaptive = { group = "androidx.compose.material3.adaptive", name = "adaptive-android", version.ref = "compose-adaptive" }
 compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity" }
 compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "compose-lifecycle" }
 compose-paging = { group = "androidx.paging", name = "paging-compose", version.ref = "compose-paging" }

@@ -55,6 +55,9 @@ dependencies {
     // compose icons
     implementation(libs.compose.icons)
 
+    // compose adaptive
+    implementation(libs.compose.adaptive)
+
     // compose paging
     implementation(libs.compose.paging)
 
