@@ -1,15 +1,17 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
     alias(libs.plugins.library)
-    alias(libs.plugins.kotlin)
     alias(libs.plugins.compose)
     id("maven-publish")
 }
 
 android {
     namespace = "xyz.teamgravity.coresdkcompose"
-    compileSdk = libs.versions.sdk.compile.get().toInt()
+
+    compileSdk {
+        version = release(libs.versions.sdk.compile.get().toInt()) {
+            minorApiLevel = 1
+        }
+    }
 
     defaultConfig {
         minSdk = libs.versions.sdk.min.get().toInt()
@@ -34,14 +36,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlin {
-        target {
-            compilerOptions {
-                jvmTarget = JvmTarget.JVM_17
-            }
-        }
-    }
-
     publishing {
         singleVariant("release") {
             withSourcesJar()
@@ -57,6 +51,9 @@ dependencies {
     implementation(libs.compose.graphics)
     implementation(libs.compose.preview)
     implementation(libs.compose.material3)
+
+    // compose icons
+    implementation(libs.compose.icons)
 
     // compose paging
     implementation(libs.compose.paging)
