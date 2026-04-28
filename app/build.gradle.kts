@@ -43,7 +43,7 @@ dependencies {
     // gravity core
     implementation(libs.gravity.core)
     implementation(projects.coreSDKCompose)
-//    implementation("com.github.raheemadamboev:core-sdk-compose:1.0.27")
+//    implementation("com.github.raheemadamboev:core-sdk-compose:1.0.30")
 
     // compose
     implementation(platform(libs.compose))
