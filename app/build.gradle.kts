@@ -29,8 +29,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     buildFeatures {
@@ -43,7 +43,7 @@ dependencies {
     // gravity core
     implementation(libs.gravity.core)
     implementation(projects.coreSDKCompose)
-//    implementation("com.github.raheemadamboev:core-sdk-compose:1.0.30")
+//    implementation("com.github.raheemadamboev:core-sdk-compose:1.0.31")
 
     // compose
     implementation(platform(libs.compose))
