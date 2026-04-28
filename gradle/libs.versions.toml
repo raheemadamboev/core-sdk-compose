@@ -1,17 +1,17 @@
 [versions]
 
-compose = "2026.02.00"
+compose = "2026.04.01"
 compose-icons = "1.7.8"
 compose-adaptive = "1.2.0"
-compose-activity = "1.12.4"
+compose-activity = "1.13.0"
 compose-lifecycle = "2.10.0"
-compose-paging = "3.4.1"
-core = "1.17.0"
+compose-paging = "3.4.2"
+core = "1.18.0"
 timber = "5.0.1"
-gravity-core = "1.0.41"
+gravity-core = "1.0.45"
 
-android = "9.0.1"
-kotlin = "2.2.10"
+android = "9.2.0"
+kotlin = "2.3.21"
 
 sdk-min = "26"
 sdk-compile = "36"

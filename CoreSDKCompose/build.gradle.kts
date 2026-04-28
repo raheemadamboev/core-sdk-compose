@@ -70,7 +70,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.raheemadamboev"
             artifactId = "core-sdk-compose"
-            version = "1.0.28"
+            version = "1.0.30"
 
             afterEvaluate {
                 from(components["release"])
